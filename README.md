@@ -1,4 +1,9 @@
 # UnityCodingArcFamily
+
+ 白袍小道
+
+
+
 一些实验，给予Unity（同时转为Unreal 相差也容易）
 
 1、Code Move
@@ -22,3 +27,13 @@
 [都是GEM或者GPUPRO，Third 的小点]，Noise，Squares，
 
 9：Example XXXX【集中于完整一些的渲染和动画相关的效果案例】
+
+文档位于DOC下：
+
+如下图是Code Move中SimplePos的部分，就放在CodeMove路径下
+
+![](./DOC/CodeMove/SimpleMathPos.PNG)
+
+如下图是LightShadow的部分，就放在LightShadow路径下
+
+![](./DOC/LightShadow/LightShadow.jpg)
