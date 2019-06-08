@@ -4,7 +4,7 @@ using System.Collections;
 
 public class CameraEditor_Tool
 {
-    [MenuItem("DZEditorTool/DZCameraTool/Align/SceneView")]
+    [MenuItem("DZExtend/DZCameraTool/Align/SceneView")]
 	static void AlignToSceneView()
 	{
         if(Selection.gameObjects.Length >0)
@@ -41,7 +41,7 @@ public class CameraEditor_Tool
 	         {
 				Vector2 mousePosition = Event.current.mousePosition;
  
-				EditorUtility.DisplayPopupMenu(new Rect(mousePosition.x, mousePosition.y, 0, 0), "DZEditorTool/",null);
+				EditorUtility.DisplayPopupMenu(new Rect(mousePosition.x, mousePosition.y, 0, 0), "DZExtend/",null);
 	            Event.current.Use();
 	         }			
 	     }
