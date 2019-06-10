@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DZ_Pipeline_Unlit
-  m_Shader: {fileID: 4800000, guid: b5c693c3d13756c4ea0904d71e1c08e5, type: 3}
+  m_Shader: {fileID: 4800000, guid: ef0c9e02c44954f6faace24ac3c27f04, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -21,4 +21,4 @@ Material:
     m_TexEnvs: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.9245283, g: 0.8678355, b: 0.8678355, a: 1}
+    - _Color: {r: 0.92188805, g: 0.8666667, b: 0.9254902, a: 1}

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ba49cf0b320a14a8983e1792c45baa, type: 3}
   m_Name: New DZCR Pipeline_Simple_Asset
   m_EditorClassIdentifier: 
-  dynamicBatching: 1
+  shadowMapSize: 4096
+  dynamicBatching: 0
   instancing: 1

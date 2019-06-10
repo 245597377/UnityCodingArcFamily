@@ -1,4 +1,4 @@
-﻿Shader "DZShader/DZ_Pipeline/Unlit" {
+﻿Shader "DZ_Pipeline/DZ_Unlit" {
 	
 	Properties {
 		_Color ("Color", Color) = (1, 1, 1, 1)
@@ -17,7 +17,7 @@
 			#pragma vertex UnlitPassVertex
 			#pragma fragment UnlitPassFragment
 			
-			#include "../ShaderLibrary/Unlit_hlsl.hlsl"
+			#include "../ShaderLibrary/DZ_Unlit.hlsl"
 			
 			ENDHLSL
 		}
