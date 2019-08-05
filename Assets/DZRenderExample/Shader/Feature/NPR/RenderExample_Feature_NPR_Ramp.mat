@@ -20,21 +20,21 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _diffuseMap:
-        m_Texture: {fileID: 2800000, guid: cf3442d22a89aa948b5958dd94428c82, type: 3}
+        m_Texture: {fileID: 2800000, guid: f59906bb08e3a6d4e9ff38c05061d0f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _lightingRamp:
-        m_Texture: {fileID: 2800000, guid: cf3442d22a89aa948b5958dd94428c82, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _normalMap:
-        m_Texture: {fileID: 2800000, guid: fbf5fca3c32af4d4c9e8a15386c00e2e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1d623a771307b714b91918991c845387, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _specMapConstant: 3.03
-    - _specularIntensity: 0.375
+    - _specMapConstant: 0.098
+    - _specularIntensity: 0.242
     - _specularPower: 1
     m_Colors:
-    - _diffuseColor: {r: 1, g: 0.8349056, b: 0.8349056, a: 1}
+    - _diffuseColor: {r: 1, g: 1, b: 1, a: 1}
     - _specularColor: {r: 1, g: 1, b: 1, a: 1}
