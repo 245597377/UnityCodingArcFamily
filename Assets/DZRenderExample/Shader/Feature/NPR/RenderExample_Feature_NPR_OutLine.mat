@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _outlineShift: 0.0122
-    - _outlineThickness: 0.0133
+    - _outlineShift: 0.0101
+    - _outlineThickness: 0.0197
     m_Colors:
     - _outlineColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
