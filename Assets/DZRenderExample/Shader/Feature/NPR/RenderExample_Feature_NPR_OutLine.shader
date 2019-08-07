@@ -8,206 +8,264 @@ Shader "RenderExample/Feature/NPR/OutLine"
 {
 	Properties
     {
-		_lightingRamp("Lighting", 2D) = "white" {}
-        _outlineColor("Outline Color", Color) = (0,0,0,1)
-		_outlineThickness ("Outline Thickness", Range(0.0, 0.025)) = 0.01
-		_outlineThickness(" ", Float) = 0.01
-		_outlineShift ("Outline Light Shift", Range(0.0, 0.025)) = 0.01
-		_outlineShift(" ", Float) = 0.01
-		_diffuseColor("Diffuse Color", Color) = (1,1,1,1)
-		_diffuseMap("Diffuse", 2D) = "white" {}
-		_specularIntensity ("Specular Intensity", Range(0.0, 1.0)) = 1.0
-		_specularIntensity (" ", Float) = 1.0
-		_specularPower ("Specular Power", Range(1.0, 50.0)) = 10
-		_specularPower (" ", Float) = 10
-		_specMapConstant ("Additive Specularity", Range(0.0, 0.5)) = .25
-		_specMapConstant (" ", Float) = .25
-		_specularColor("Specular Color", Color) = (1,1,1,1)
-		_normalMap("Normal / Specular (A)", 2D) = "bump" {}
+		_MainTex ("Main Tex", 2D)  = "white" {}
+		_Outline ("Outline", Range(0,1)) = 0.1
+		_OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)
+		_DiffuseColor ("Diffuse Color", Color) = (1, 1, 1, 1)
+		_SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)
+		_Shininess ("Shininess", Range(1, 500)) = 40
+		_DiffuseSegment ("Diffuse Segment", Vector) = (0.1, 0.3, 0.6, 1.0)
+		_SpecularSegment ("Specular Segment", Range(0, 1)) = 0.5
     }
 
     SubShader
     {
+		Tags { "RenderType"="Opaque" }
+		LOD 200
         pass
         {
-            ZWrite ON
-            Tags{"Queue" = "Transparent" "RenderType"="Transparent"}
+			NAME "OUTLINE"
             Cull Front
-
             CGPROGRAM
-            #include "UnityCG.cginc"
-            #pragma vertex vertexMain
-            #pragma fragment fragMain
+			#pragma vertex VertMain
+			#pragma fragment FragMain
+			#include "UnityCG.cginc"
 
-            uniform fixed4 _outlineColor;
-			uniform fixed _outlineThickness;
-			uniform fixed _outlineShift;
+			float _Outline;
+			float4 _OutlineColor;
+			struct a2f
+			{
+				float4 vertex: POSITION;
+				float3 normal: NORMAL;
 
-            struct app2vert 
-            {
-				float4 vertex 	: 	POSITION;
-				fixed4 normal 	:	NORMAL;	
+			};
+
+			struct v2f
+			{
+				float4 pos: SV_POSITION;
+			};
+
+			v2f VertMain(a2f IN)
+			{
+				v2f output;
+				float4 pos = mul(UNITY_MATRIX_MV, IN.vertex);
+				float3 normal = mul((float3x3)UNITY_MATRIX_IT_MV, IN.normal);
+				normal.z = -0.5;
+
+				pos = pos + float4(normalize(normal.xyz),1.0) * _Outline;
+				output.pos = mul(UNITY_MATRIX_P,pos);
+				return output;
+			}
+
+			fixed4 FragMain(v2f IN):COLOR
+			{
+				return float4(_OutlineColor.rgb, 1); 
+			}
+
+            ENDCG
+        }
+
+		pass
+		{
+			Tags { "LightMode"="ForwardBase" }
+		
+			CGPROGRAM
+		
+			#pragma vertex vert
+			#pragma fragment frag
+			
+			#pragma multi_compile_fwdbase
+		
+			#include "UnityCG.cginc"
+			#include "Lighting.cginc"
+			#include "AutoLight.cginc"
+			#include "UnityShaderVariables.cginc"
+		
+			fixed4 _DiffuseColor;
+			sampler2D _MainTex;
+			float4 _MainTex_ST;
+			fixed4 _SpecularColor;
+			float _Shininess;
+			fixed4 _DiffuseSegment;
+			fixed _SpecularSegment;
+		
+			struct a2v 
+			{
+				float4 vertex : POSITION;
+				float3 normal : NORMAL;
+				float4 texcoord : TEXCOORD0;
+			}; 
+		
+			struct v2f 
+			{
+				float4 pos : SV_POSITION;
+				float2 uv : TEXCOORD0;
+				fixed3 worldNormal : TEXCOORD1;
+				float3 worldPos : TEXCOORD2;
+				SHADOW_COORDS(3)
 			};
 			
-			struct vert2Pixel
+			v2f vert (a2v v) 
 			{
-				float4 pos 		: 	SV_POSITION;
+				v2f o;
+				
+				o.pos = UnityObjectToClipPos( v.vertex); 
+				o.worldNormal  = mul(v.normal, (float3x3)unity_WorldToObject);
+				o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+				o.uv = TRANSFORM_TEX (v.texcoord, _MainTex);
+				
+				TRANSFER_SHADOW(o);
+		    	
+				return o;
+			}
+			
+			fixed4 frag(v2f i) : SV_Target 
+			{ 
+				fixed3 worldNormal = normalize(i.worldNormal);
+				fixed3 worldLightDir = UnityWorldSpaceLightDir(i.worldPos);
+				fixed3 worldViewDir = UnityWorldSpaceViewDir(i.worldPos);
+				fixed3 worldHalfDir = normalize(worldViewDir + worldLightDir);
+				
+				UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos);
+		    	
+				fixed diff = dot(worldNormal, worldLightDir);
+				diff = diff * 0.5 + 0.5;
+				fixed spec = max(0, dot(worldNormal, worldHalfDir));
+				spec = pow(spec, _Shininess);
+				
+				fixed w = fwidth(diff) * 2.0;
+				if (diff < _DiffuseSegment.x + w) {
+					diff = lerp(_DiffuseSegment.x, _DiffuseSegment.y, smoothstep(_DiffuseSegment.x - w, _DiffuseSegment.x + w, diff));
+//					diff = lerp(_DiffuseSegment.x, _DiffuseSegment.y, clamp(0.5 * (diff - _DiffuseSegment.x) / w, 0, 1));
+				} else if (diff < _DiffuseSegment.y + w) {
+					diff = lerp(_DiffuseSegment.y, _DiffuseSegment.z, smoothstep(_DiffuseSegment.y - w, _DiffuseSegment.y + w, diff));
+//					diff = lerp(_DiffuseSegment.y, _DiffuseSegment.z, clamp(0.5 * (diff - _DiffuseSegment.y) / w, 0, 1));
+				} else if (diff < _DiffuseSegment.z + w) {
+					diff = lerp(_DiffuseSegment.z, _DiffuseSegment.w, smoothstep(_DiffuseSegment.z - w, _DiffuseSegment.z + w, diff));
+//					diff = lerp(_DiffuseSegment.z, _DiffuseSegment.w, clamp(0.5 * (diff - _DiffuseSegment.z) / w, 0, 1));
+				} else {
+					diff = _DiffuseSegment.w;
+				}
+				
+				w = fwidth(spec);
+				if (spec < _SpecularSegment + w) {
+					spec = lerp(0, 1, smoothstep(_SpecularSegment - w, _SpecularSegment + w, spec));
+				} else {
+					spec = 1;
+				}
+				
+				fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT;
+				
+				
+				fixed3 texColor = tex2D(_MainTex, i.uv).rgb;
+				fixed3 diffuse = diff * _LightColor0.rgb * _DiffuseColor.rgb * texColor;
+				fixed3 specular = spec * _LightColor0.rgb * _SpecularColor.rgb;
+				
+				return fixed4(ambient + (diffuse + specular) * atten, 1);
+			}
+		
+			ENDCG
+		}
+		
+		Pass 
+		{
+			Tags { "LightMode"="ForwardAdd" }
+			
+			Blend One One
+			
+			CGPROGRAM
+			
+			#pragma vertex vert
+			#pragma fragment frag
+			
+			#pragma multi_compile_fwdadd
+			
+			#include "UnityCG.cginc"
+			#include "Lighting.cginc"
+			#include "AutoLight.cginc"
+			#include "UnityShaderVariables.cginc"
+			
+			
+			fixed4 _DiffuseColor;
+			sampler2D _MainTex;
+			float4 _MainTex_ST;
+			fixed4 _SpecularColor;
+			float _Shininess;
+			fixed4 _DiffuseSegment;
+			fixed _SpecularSegment;
+			
+			struct a2v 
+			{
+				float4 vertex : POSITION;
+				float3 normal : NORMAL;
+				float4 texcoord : TEXCOORD0;
+			}; 
+			
+			struct v2f 
+			{
+				float4 pos : SV_POSITION;
+				float2 uv : TEXCOORD0;
+				fixed3 worldNormal : TEXCOORD1;
+				float3 worldPos : TEXCOORD2;
+				SHADOW_COORDS(3)
 			};
-
-            vert2Pixel vertexMain(app2vert In)
-            {
-                vert2Pixel OUT;
-                float4x4 WorldViewProjection = UNITY_MATRIX_MVP;
-                float4x4 WorldInverseTranspose = unity_WorldToObject; 
-				float4x4 World = unity_ObjectToWorld;
-
-                float4 deformedPosition = mul(World, In.vertex);
-                fixed3 norm = normalize(mul(  In.normal.xyz , WorldInverseTranspose ).xyz);	
-
-                half3 pixelToLightPosition =  _WorldSpaceLightPos0.xyz - (deformedPosition * _WorldSpaceLightPos0.w);
-                fixed3 lightDirection = normalize(-pixelToLightPosition);
-				
-				deformedPosition.xyz += ( norm * _outlineThickness) + (lightDirection * _outlineShift);
-				deformedPosition.xyz = mul(WorldInverseTranspose, float4 (deformedPosition.xyz, 1)).xyz * 1.0;
-
-				OUT.pos = mul(WorldViewProjection, deformedPosition);
-				
-				return OUT;
-            }
-
-            fixed4 fragMain(vert2Pixel In):COLOR
-            {
-                fixed4 outColor;							
-				outColor =  _outlineColor;
-				return outColor;
-            }
-
-            ENDCG
-        }
-
-        pass
-        {
-            Tags{"LightMode"="ForwardBase"}
-            Cull Back
-            CGPROGRAM
-            #include "UnityCG.cginc"
-            #pragma multi_compile_fwdbase
-			#pragma target 3.0
-
-            #pragma vertex vertexMain
-            #pragma fragment fragMain
-
-			uniform fixed3 _diffuseColor;
-			uniform sampler2D _lightingRamp;
-			uniform sampler2D _diffuseMap;
-			uniform half4 _diffuseMap_ST;
-			uniform fixed4 _LightColor0; 
-			uniform fixed _specMapConstant;
-			uniform half _specularPower;
-			uniform half _specularIntensity;
-			uniform fixed4 _specularColor;
-			uniform sampler2D _normalMap;
-			uniform half4 _normalMap_ST;
-
-            struct app2vert
-            {
-                fixed4 vertex       :POSITION;
-                fixed4 normal       :NORMAL;
-                fixed4 tangent      :TANGENT;
-                fixed2 texcoord0    :TEXCOORD0;
-            };
-
-            struct vert2Pixel
-            {
-                float4 Pos          :SV_POSITION;
-                fixed2 uvs			:TEXCOORD0;
-				fixed3 normalDir	:TEXCOORD1;	
-				fixed3 binormalDir	:TEXCOORD2;	
-				fixed3 tangentDir	:TEXCOORD3;	
-				half3 posWorld		:TEXCOORD4;	
-				fixed3 viewDir		:TEXCOORD5;
-				fixed3 Lighting		:TEXCOORD6;
-            };
-
-			//兰伯特光照模式
-			fixed lambert(fixed3 norDir, fixed3 lightDir)
+			
+			v2f vert (a2v v) 
 			{
-				return saturate( (dot(norDir,lightDir) + 1) /2 );
-			}
-
-			fixed phong(fixed3 R, fixed3 L)
-			{
-				//modified to return a sharp higlight
-				return floor(2 * pow(saturate(dot(R, L)), _specularPower))/ 2;
-			}
-
-            vert2Pixel vertexMain(app2vert In)
-            {
-                vert2Pixel Out;
-                float4x4 worldviewProjectMat    = UNITY_MATRIX_MVP;
-                float4x4 WorldInverseTranspose  = unity_WorldToObject;
-                float4x4 World                  = unity_ObjectToWorld;
-
-                Out.Pos = normalize(mul(worldviewProjectMat, In.vertex));
-                Out.normalDir = normalize(mul(In.normal, WorldInverseTranspose));
-                Out.tangentDir = normalize(mul(In.tangent, WorldInverseTranspose));
-                Out.binormalDir = normalize(cross(Out.normalDir,Out.tangentDir));
-				Out.posWorld = mul(In.vertex, World);
-				Out.viewDir  = normalize(Out.posWorld - _WorldSpaceCameraPos);
-				Out.Lighting = fixed3(0.0,0.0,0.0);
-                return Out;
-            }
-
-			//DaoZhang_XDZ
-			//Toon Light Frag with jianbian LightRAMP and NormalMap
-            float4 fragMain(vert2Pixel IN):COLOR
-            {
-				half2 normalUVs = TRANSFORM_TEX(IN.uvs, _normalMap);
-				fixed4 normal1D = tex2D(_normalMap, normalUVs);
-				//unpack Normal
-				normal1D.xyz = normal1D.xyz * 2 - 1;
+				v2f o;
+			
+				o.pos = UnityObjectToClipPos( v.vertex); 
+				o.worldNormal  = mul(v.normal, (float3x3)unity_WorldToObject);
+				o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+				o.uv = TRANSFORM_TEX (v.texcoord, _MainTex);
 				
-
-				fixed3	normalDir	= normal1D.xyz;
-				fixed	specMap		= normal1D.w;
-				fixed3 ambientL = UNITY_LIGHTMODEL_AMBIENT.xyz;
-				normalDir = normalize((normalDir.x * IN.tangentDir) + (normalDir.y * IN.binormalDir) + (normalDir.z * IN.normalDir));
-
-
-				//Main Dirction Light
-				fixed3	pixelToLightSource	= _WorldSpaceLightPos0.xyz - (IN.posWorld - _WorldSpaceLightPos0.w);
-				fixed	attenuation			= lerp(1.0, 1.0/length(pixelToLightSource), _WorldSpaceLightPos0.w);
-				fixed3  lightDirection		= normalize(pixelToLightSource);
-				float3	diffuseL			= lambert(normalDir, lightDirection);
-
-				//Diffuse Lighting
-				// Base On LightRamp -- uv's u with length
-				fixed	Lighting			= saturate(saturate(IN.Lighting - diffuseL) + diffuseL + ambientL);
-				fixed   LightUV				= clamp(Lighting, 0.01, 0.99);
-				fixed3	diffuse				= tex2D(_lightingRamp, fixed2(LightUV, 0.0));
-				diffuse = _LightColor0.xyz * (ambientL + diffuse) * attenuation;
-
-				//Spec Light
-				fixed	specularHighlight	=  phong(reflect(normalDir, IN.viewDir), lightDirection) * attenuation;
-				fixed specIntensity = ceil(specularHighlight ) * _specularIntensity;
-				specularHighlight = 1+ specularHighlight;
-				diffuse = lerp (diffuse, specularHighlight * _specularColor ,  specIntensity );
-				diffuse += specMap * diffuse *_specMapConstant;
+				TRANSFER_SHADOW(o);
 				
-
-				fixed4 outColor;							
-				half2 diffuseUVs = TRANSFORM_TEX(IN.uvs, _diffuseMap);
-				fixed4 texSample = tex2D(_diffuseMap, diffuseUVs);
-				fixed3 diffuseS = (diffuse * texSample.xyz) * _diffuseColor.xyz;
-				outColor = fixed4( diffuseS ,1.0);
-				return outColor;
-
-
-                //return float4(1.0,0.25,0.25,1.0);
-            }
-
-            ENDCG
-        }
-        
+				return o;
+			}
+			
+			fixed4 frag(v2f i) : SV_Target { 
+				fixed3 worldNormal = normalize(i.worldNormal);
+				fixed3 worldLightDir = UnityWorldSpaceLightDir(i.worldPos);
+				fixed3 worldViewDir = UnityWorldSpaceViewDir(i.worldPos);
+				fixed3 worldHalfDir = normalize(worldViewDir + worldLightDir);
+				
+				UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos);
+				
+				fixed diff = dot(worldNormal, worldLightDir);
+				diff = (diff * 0.5 + 0.5) * atten;
+				fixed spec = max(0, dot(worldNormal, worldHalfDir));
+				spec = pow(spec, _Shininess);
+				
+				fixed w = fwidth(diff) * 2.0;
+				if (diff < _DiffuseSegment.x + w) {
+					diff = lerp(_DiffuseSegment.x, _DiffuseSegment.y, smoothstep(_DiffuseSegment.x - w, _DiffuseSegment.x + w, diff));
+//					diff = lerp(_DiffuseSegment.x, _DiffuseSegment.y, clamp(0.5 * (diff - _DiffuseSegment.x) / w, 0, 1));
+				} else if (diff < _DiffuseSegment.y + w) {
+					diff = lerp(_DiffuseSegment.y, _DiffuseSegment.z, smoothstep(_DiffuseSegment.y - w, _DiffuseSegment.y + w, diff));
+//					diff = lerp(_DiffuseSegment.y, _DiffuseSegment.z, clamp(0.5 * (diff - _DiffuseSegment.y) / w, 0, 1));
+				} else if (diff < _DiffuseSegment.z + w) {
+					diff = lerp(_DiffuseSegment.z, _DiffuseSegment.w, smoothstep(_DiffuseSegment.z - w, _DiffuseSegment.z + w, diff));
+//					diff = lerp(_DiffuseSegment.z, _DiffuseSegment.w, clamp(0.5 * (diff - _DiffuseSegment.z) / w, 0, 1));
+				} else {
+					diff = _DiffuseSegment.w;
+				}
+				
+				w = fwidth(spec);
+				if (spec < _SpecularSegment + w) {
+					spec = lerp(0, _SpecularSegment, smoothstep(_SpecularSegment - w, _SpecularSegment + w, spec));
+				} else {
+					spec = _SpecularSegment;
+				}
+				
+				fixed3 texColor = tex2D(_MainTex, i.uv).rgb;
+				fixed3 diffuse = diff * _LightColor0.rgb * _DiffuseColor.rgb * texColor;
+				fixed3 specular = spec * _LightColor0.rgb * _SpecularColor.rgb;
+				
+				return fixed4((diffuse + specular) * atten, 1);
+			}
+			
+			ENDCG
+		}
     }
 }
