@@ -18,9 +18,26 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _diffuseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _lightingRamp:
+        m_Texture: {fileID: 2800000, guid: 7ed3752cbf0c8834db6f178fa445b8e8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _normalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _outlineShift: 0.0101
-    - _outlineThickness: 0.0197
+    - _outlineShift: 0.0108
+    - _outlineThickness: 0.0156
+    - _specMapConstant: 0.276
+    - _specularIntensity: 0.652
+    - _specularPower: 20.8
     m_Colors:
-    - _outlineColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+    - _diffuseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _outlineColor: {r: 0.11372547, g: 0.83137256, b: 0.6642314, a: 1}
+    - _specularColor: {r: 0.92456436, g: 1, b: 0.3443396, a: 1}

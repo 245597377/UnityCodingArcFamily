@@ -18,6 +18,8 @@ Shader "RenderExample/Feature/NPR/OutLine"
 		_diffuseMap("Diffuse", 2D) = "white" {}
 		_specularIntensity ("Specular Intensity", Range(0.0, 1.0)) = 1.0
 		_specularIntensity (" ", Float) = 1.0
+		_specularPower ("Specular Power", Range(1.0, 50.0)) = 10
+		_specularPower (" ", Float) = 10
 		_specMapConstant ("Additive Specularity", Range(0.0, 0.5)) = .25
 		_specMapConstant (" ", Float) = .25
 		_specularColor("Specular Color", Color) = (1,1,1,1)
@@ -101,6 +103,7 @@ Shader "RenderExample/Feature/NPR/OutLine"
 			uniform half4 _diffuseMap_ST;
 			uniform fixed4 _LightColor0; 
 			uniform fixed _specMapConstant;
+			uniform half _specularPower;
 			uniform half _specularIntensity;
 			uniform fixed4 _specularColor;
 			uniform sampler2D _normalMap;
@@ -132,7 +135,11 @@ Shader "RenderExample/Feature/NPR/OutLine"
 				return saturate( (dot(norDir,lightDir) + 1) /2 );
 			}
 
-
+			fixed phong(fixed3 R, fixed3 L)
+			{
+				//modified to return a sharp higlight
+				return floor(2 * pow(saturate(dot(R, L)), _specularPower))/ 2;
+			}
 
             vert2Pixel vertexMain(app2vert In)
             {
@@ -178,10 +185,25 @@ Shader "RenderExample/Feature/NPR/OutLine"
 				fixed	Lighting			= saturate(saturate(IN.Lighting - diffuseL) + diffuseL + ambientL);
 				fixed   LightUV				= clamp(Lighting, 0.01, 0.99);
 				fixed3	diffuse				= tex2D(_lightingRamp, fixed2(LightUV, 0.0));
+				diffuse = _LightColor0.xyz * (ambientL + diffuse) * attenuation;
 
 				//Spec Light
+				fixed	specularHighlight	=  phong(reflect(normalDir, IN.viewDir), lightDirection) * attenuation;
+				fixed specIntensity = ceil(specularHighlight ) * _specularIntensity;
+				specularHighlight = 1+ specularHighlight;
+				diffuse = lerp (diffuse, specularHighlight * _specularColor ,  specIntensity );
+				diffuse += specMap * diffuse *_specMapConstant;
+				
 
-                return float4(1.0,0.25,0.25,1.0);
+				fixed4 outColor;							
+				half2 diffuseUVs = TRANSFORM_TEX(IN.uvs, _diffuseMap);
+				fixed4 texSample = tex2D(_diffuseMap, diffuseUVs);
+				fixed3 diffuseS = (diffuse * texSample.xyz) * _diffuseColor.xyz;
+				outColor = fixed4( diffuseS ,1.0);
+				return outColor;
+
+
+                //return float4(1.0,0.25,0.25,1.0);
             }
 
             ENDCG
