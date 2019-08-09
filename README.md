@@ -37,3 +37,29 @@
 如下图是LightShadow的部分，就放在LightShadow路径下
 
 ![](./DOC/LightShadow/LightShadow.jpg)
+
+Res: 				SRc Resouce 									原始资源
+
+STFEngine: 	EngineExtendTool And FrameWork   引擎扩展工具和框架
+
+ECS: 				JopSystem，DataDriver ，EntityComSystem_With Unity
+
+Programmer:	Programming Mode，Texture, Anim
+
+​							程序化的一些内容 如程序化动画 程序化纹理，图元 等【迁移过程中，持续】
+
+Render：目录【迁移过程中，持续】
+
+包含Shader、RenderPipeline、 etc.[部分代码中直接包含公式说明和DOC]
+
+![1565351504269](README.assets/1565351504269.png)
+
+![1565351480296](README.assets/1565351480296.png)
+
+Unity-Shader-BaseProperty
+
+![Base_Property](README.assets/Base_Property.png)
+
+Feature-NPR_Base
+
+![Feature_NRP_20190809194500](README.assets/Feature_NRP_20190809194500.png)
