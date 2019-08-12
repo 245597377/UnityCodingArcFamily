@@ -2,55 +2,59 @@
 using UnityEditor;
 using UnityEngine;
 
-class DZScriptError_Editor : EditorWindow
+namespace STFEngine.Util.Editor
 {
-    [MenuItem("DZEngineTool/SceneTool/DZScriptError_Remove")]
-    static void OpenMoveSeleWin()
+
+    class DZScriptError_Editor : EditorWindow
     {
-        DZScriptError_Editor win = (DZScriptError_Editor)EditorWindow.GetWindow(typeof(DZScriptError_Editor), false, "DZEngine_SceneObjHandle_Win", true);
-        win.Show();
-    }
-
-
-    private GameObject currMoveToObj;
-    private Vector2 mScrollPos;
-    void OnGUI()
-    {
-        GUILayout.BeginVertical("Box");
-        GUILayout.Label("Select will Check's Obj");
-        currMoveToObj = (GameObject)EditorGUILayout.ObjectField("MObj", currMoveToObj, typeof(GameObject), true);
-        
-
-       
-        if(currMoveToObj != null)
+        [MenuItem("DZEngineTool/SceneTool/DZScriptError_Remove")]
+        static void OpenMoveSeleWin()
         {
-           int vlenChild = currMoveToObj.transform.childCount;
+            DZScriptError_Editor win = (DZScriptError_Editor)EditorWindow.GetWindow(typeof(DZScriptError_Editor), false, "DZEngine_SceneObjHandle_Win", true);
+            win.Show();
+        }
 
-            if (GUILayout.Button("check and remove error"))
+
+        private GameObject currMoveToObj;
+        private Vector2 mScrollPos;
+        void OnGUI()
+        {
+            GUILayout.BeginVertical("Box");
+            GUILayout.Label("Select will Check's Obj");
+            currMoveToObj = (GameObject)EditorGUILayout.ObjectField("MObj", currMoveToObj, typeof(GameObject), true);
+
+
+
+            if (currMoveToObj != null)
             {
-                for (int i = 0; i < vlenChild; i++)
+                int vlenChild = currMoveToObj.transform.childCount;
+
+                if (GUILayout.Button("check and remove error"))
                 {
-                    Transform vs = currMoveToObj.transform.GetChild(i);
-                    GameObject vItem = vs.gameObject;
-                    SerializedObject so = new SerializedObject(vItem);
-                    var soProperties = so.FindProperty("m_Component");
-                    var components = vItem.GetComponents<Component>();
-                    int propertyIndex = 0;
-                    foreach (var c in components)
+                    for (int i = 0; i < vlenChild; i++)
                     {
-                        if (c == null)
+                        Transform vs = currMoveToObj.transform.GetChild(i);
+                        GameObject vItem = vs.gameObject;
+                        SerializedObject so = new SerializedObject(vItem);
+                        var soProperties = so.FindProperty("m_Component");
+                        var components = vItem.GetComponents<Component>();
+                        int propertyIndex = 0;
+                        foreach (var c in components)
                         {
-                            soProperties.DeleteArrayElementAtIndex(propertyIndex);
+                            if (c == null)
+                            {
+                                soProperties.DeleteArrayElementAtIndex(propertyIndex);
+                            }
+                            ++propertyIndex;
                         }
-                        ++propertyIndex;
+                        so.ApplyModifiedProperties();
                     }
-                    so.ApplyModifiedProperties();
+
                 }
 
+
             }
-
-
+            GUILayout.EndVertical();
         }
-        GUILayout.EndVertical();
     }
 }

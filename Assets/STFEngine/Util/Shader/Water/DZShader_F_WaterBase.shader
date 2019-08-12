@@ -1,4 +1,4 @@
-﻿Shader "DZShader/Feature/Water/WaterBase"
+﻿Shader "STFRender/Feature/Water/WaterBase"
 {
     Properties
     {

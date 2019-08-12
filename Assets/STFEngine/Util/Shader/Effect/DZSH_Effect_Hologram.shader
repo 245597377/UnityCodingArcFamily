@@ -1,4 +1,4 @@
-﻿Shader "DZShader/Effect/Hologram"
+﻿Shader "STFRender/Effect/Hologram"
 {
 	Properties
 	{

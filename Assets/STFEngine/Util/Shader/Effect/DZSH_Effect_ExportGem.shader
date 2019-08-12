@@ -1,4 +1,4 @@
-﻿Shader "DZShader/Effect/ExportGem"
+﻿Shader "STFRender/Effect/ExportGem"
 {
 	Properties
 	{

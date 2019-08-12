@@ -1,4 +1,4 @@
-Shader "Hidden/ColorSuite"
+Shader "STFRender/ImageEffect/ColorSuite"
 {
     Properties
     {

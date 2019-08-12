@@ -1,8 +1,30 @@
 fileFormatVersion: 2
 guid: 50724eec47300a44c9319608699c5a5e
 ModelImporter:
-  serializedVersion: 25
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Vehicle_Car_Large_Dark 1
+    100004: WheelBack
+    100006: WheelFrontLeft
+    100008: WheelFrontRight
+    400000: //RootNode
+    400002: Vehicle_Car_Large_Dark 1
+    400004: WheelBack
+    400006: WheelFrontLeft
+    400008: WheelFrontRight
+    2300000: Vehicle_Car_Large_Dark 1
+    2300002: WheelBack
+    2300004: WheelFrontLeft
+    2300006: WheelFrontRight
+    3300000: Vehicle_Car_Large_Dark 1
+    3300002: WheelBack
+    3300004: WheelFrontLeft
+    3300006: WheelFrontRight
+    4300000: Vehicle_Car_Large_Dark
+    4300002: WheelFrontLeft
+    4300004: WheelBack
+    4300006: WheelFrontRight
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -45,19 +67,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -66,11 +87,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 0
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -80,7 +100,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

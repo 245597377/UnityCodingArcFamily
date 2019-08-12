@@ -1,4 +1,4 @@
-﻿Shader "DZShader/Effect/Effect_UPD_1"
+﻿Shader "STFRender/Effect/Effect_UPD_1"
 {
     Properties
     {
