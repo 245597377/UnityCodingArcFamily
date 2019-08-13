@@ -69,7 +69,7 @@ Feature-NPR_Base
 Shader/CS
 
 <video id="video" controls="" preload="none">
-       <source id="wmv" src="DOC/Render/Shader/Rec/ResC_CS01.mp4" type="video/mp4">
+       <source id="mp4" src="DOC/Render/Shader/Rec/ResC_CS01.mp4" type="video/mp4">
 </video>
 
  
