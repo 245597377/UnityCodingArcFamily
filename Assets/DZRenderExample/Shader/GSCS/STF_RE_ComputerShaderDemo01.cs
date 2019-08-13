@@ -10,14 +10,18 @@ namespace STFEngine.Render.Example
            //自定义结构用于基础数据在cpu和gpu运算间传递
         public struct Particle
         {
-            public Vector2 position;
-            public Vector2 velocity;
+            public Vector3 position;
+            public Vector3 velocity;
         }
-
+        public Transform mSpawnCenter;
+        public Transform mTarget1;
+        public Transform mTarget2;
+        public float mMinMoveDistance = 1.0f;
         public ComputeShader computeShader;
         public Material material;
         public int size = 1024000;
         public float spawnRange = 1.0f;
+        public float moveSpeedScale = 0.2f;
         private ComputeBuffer particles;
 
         const int WARP_SIZE = 1024;
@@ -45,8 +49,8 @@ namespace STFEngine.Render.Example
             for (int i = 0; i < size; i++)
             {
                 initBuffer[i] = new Particle();
-                initBuffer[i].position = Random.insideUnitCircle * spawnRange;
-                initBuffer[i].velocity = Vector2.zero;
+                initBuffer[i].position = mSpawnCenter.position + Random.insideUnitSphere * spawnRange;
+                initBuffer[i].velocity = Vector3.zero;
             }
             //写入 数据到 computeBuffer
             //之后会用于在 cpu 到 compute shader 到 shader 直接传递参数
@@ -72,23 +76,28 @@ namespace STFEngine.Render.Example
                 //重置buffer 往compute shader 里更新自定义数据也是这样写
                 particles.SetData(initBuffer);
             }
-            
-            //传递 int float Vector3 等数据 Vector2 和 Vector3 要转成 float[2]
-            //float[3] 才可以用
-            computeShader.SetInt("shouldMove", Input.GetMouseButton(0) ? 1 : 0);
-            var mousePosition = GetMousePosition();
-            computeShader.SetFloats("mousePosition", mousePosition);
+            var centerPosition1 = GetCenterPosition1();
+            var centerPosition2 = GetCenterPosition2();
+            int vIsCanMove = Vector3.Distance(mTarget1.position, mTarget2.position) > mMinMoveDistance? 1:0;
+            computeShader.SetInt("shouldMove", vIsCanMove);
+            computeShader.SetFloats("centerPosition1", centerPosition1);
+            computeShader.SetFloats("centerPosition2", centerPosition2);
             computeShader.SetFloat("dt", Time.deltaTime);
-
+            computeShader.SetFloat("SpeedScale", moveSpeedScale);
             //执行一次compute shader 里的函数
             computeShader.Dispatch(kernelIndex, warpCount, 1, 1);
         }
 
-        float[] GetMousePosition()
+        float[] GetCenterPosition1()
         {
-            var mp = Input.mousePosition;
-            var v = Camera.main.ScreenToWorldPoint(mp);
-            return new float[] { v.x, v.y };
+            var v = mTarget1.position;
+            return new float[] { v.x, v.y,v.z };
+        }
+        
+        float[] GetCenterPosition2()
+        {
+            var v = mTarget2.position;
+            return new float[] { v.x, v.y,v.z };
         }
         
         //渲染效果

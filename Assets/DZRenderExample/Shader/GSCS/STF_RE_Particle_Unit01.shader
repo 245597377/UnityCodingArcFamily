@@ -24,8 +24,8 @@ Shader "STF/RE/Particle/CS_Unit01"
             // Particle's data
             struct Particle
             {
-                float2 position;
-                float2 velocity;
+                float3 position;
+                float3 velocity;
             };
 
             // Pixel shader input
@@ -53,7 +53,7 @@ Shader "STF/RE/Particle/CS_Unit01"
                 float lerpValue = clamp(speed / _HighSpeedValue, 0.0f, 1.0f);
                 o.color = lerp(_ColorLow, _ColorHigh, lerpValue);
                 // Position
-                o.position = UnityObjectToClipPos(float4(Particles[instance_id].position, 0.0f, 1.0f));
+                o.position = UnityObjectToClipPos(float4(Particles[instance_id].position, 1.0f));
 
                 return o;
             }

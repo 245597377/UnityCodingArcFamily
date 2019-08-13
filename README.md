@@ -63,3 +63,18 @@ Unity-Shader-BaseProperty
 Feature-NPR_Base
 
 ![Feature_NRP_20190809194500](README.assets/Feature_NRP_20190809194500.png)
+
+
+
+Shader/CS
+
+<video id="video" controls="" preload="none">
+ 
+
+   <source id="wmv" src="/DOC/Render/Shader/Rec/ResC_CS01.mp4" type="video/mp4">
+</video>
+
+---------------------
+版权声明：本文为CSDN博主「l1216766050」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/l1216766050/article/details/88962973
+

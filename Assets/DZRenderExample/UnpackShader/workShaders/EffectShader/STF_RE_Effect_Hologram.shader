@@ -1,4 +1,4 @@
-﻿Shader "SenseTimeARSand/Effect_Mesh/Hologram"
+﻿Shader "STF/RE/Effect/Mesh/Hologram"
 {
 	Properties
 	{

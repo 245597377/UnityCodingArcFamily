@@ -1,4 +1,4 @@
-﻿Shader "SenseTimeARSand/Effect_Mesh/ExportGem"
+﻿Shader "STF/RE/Effect/Mesh/ExportGem"
 {
 	Properties
 	{

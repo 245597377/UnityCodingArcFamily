@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\wumingfei\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\wumingfei\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_UnityCodingArcFamily.-1939981952.00" t="ExcludeRecursive" />
+    <e p="C:\Users\daozhang_xdz\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\daozhang_xdz\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_UnityCodingArcFamily.-1939981952.00" t="ExcludeRecursive" />
     <e p="E:\Studio\UnityStudio\UnityCodingArcFamily" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -98,8 +98,8 @@
               <e p="CloudsShader.shader" t="Include" />
               <e p="DZCloudShader.shader" t="Include" />
               <e p="EffectShader" t="Include">
-                <e p="SenseTime_Effect_ExportGem.shader" t="Include" />
-                <e p="SenseTime_Effect_Hologram.shader" t="Include" />
+                <e p="STF_RE_Effect_ExportGem.shader" t="Include" />
+                <e p="STF_RE_Effect_Hologram.shader" t="Include" />
               </e>
             </e>
           </e>

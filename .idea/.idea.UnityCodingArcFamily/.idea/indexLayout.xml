@@ -21,6 +21,7 @@
       <Path>.idea</Path>
       <Path>.vs</Path>
       <Path>.vscode</Path>
+      <Path>CgIncludes</Path>
       <Path>DOC</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
