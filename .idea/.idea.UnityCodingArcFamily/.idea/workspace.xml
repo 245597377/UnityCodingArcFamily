@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CluseAABB_Check.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CluseAABB_Check.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_CluseAABB_Check.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_CluseAABB_Check.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_CluseAABB_Debug.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_CluseAABB_Debug.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_CluseAABB_Debug000.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_CluseAABB_Debug000.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/ExtendProperty/RenderExample_EProperty_ViewDir.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/ExtendProperty/RenderExample_EProperty_ViewDir.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/ExtendProperty/RenderExample_EPropety_ViewDir.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/ExtendProperty/RenderExample_EPropety_ViewDir.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/Custom_RenderExample_FirstShader_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/Custom_RenderExample_FirstShader_0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/Custom_RenderExample_FirstShader_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/Custom_RenderExample_FirstShader_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/Custom_RenderExample_FirstShader_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/Custom_RenderExample_FirstShader_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_0.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_0.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_1.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_1.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_2.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_2.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/DZRenderExample_LightBase_BlinnPhong.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/DZRenderExample_LightBase_BlinnPhong.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/DZRenderExample_LightBase_Diffuse Pixel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/DZRenderExample_LightBase_Diffuse Pixel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/DZRenderExample_LightBase_Phone.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/DZRenderExample_LightBase_Phone.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_BlinnPhong.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_BlinnPhong.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_DiffusePixel.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_DiffusePixel.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_Phone.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_Phone.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_PixelDepth.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_PixelDepth.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_Tangent.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_Tangent.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_UV.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_UV.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_bitnormal.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_bitnormal.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_firstUV.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_firstUV.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_secondUV.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_secondUV.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_vertexPosition.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_vertexPosition.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_vertexnormal.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/RenderExample_UnityProperty_vertexnormal.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Hatching.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Hatching.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Hatching.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Hatching.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_LPG.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_LPG.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_LowPolygonGeometry.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_LowPolygonGeometry.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLine.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLine.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLine.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLine.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLineNL.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLineNL.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLineNL.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLineNL.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Pencil Contour.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Pencil Contour.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilContour.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilContour.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilSketch.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilSketch.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilSketch.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilSketch.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Ramp.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Ramp.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Ramp.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Ramp.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_SilhouetteExtraction.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_SilhouetteExtraction.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_SilhouetteExtraction.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_SilhouetteExtraction.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_StylizedHighlights.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_StylizedHighlights.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_StylizedHighlights.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_StylizedHighlights.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Tone Based Shading.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Tone Based Shading.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToneBasedShading.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToneBasedShading.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToonCeil.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToonCeil.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToonCeil.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToonCeil.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe Transparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe Transparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_WireframeTransparent.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_WireframeTransparent.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature_NPR_Base.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature_NPR_Base.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Res/Fantasy Forest Environment Free Sample/Scenes/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Res/Fantasy Forest Environment Free Sample/Scenes/New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>operator</find>
+      <find>BeginFrameRendering</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>}</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/Passes/CopyColorPass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/556A7633-052F-4D42-A01F-F358B4E15AEE/98/ea6d998c/RenderingData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/1f/bbb67dc7/CullResults.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/DefaultRendererSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/3f/d1fe2173/ScriptableRenderContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DrawSceneColor.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/00/851fca56/ComputeBuffer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/2b/e24dc512/RenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/61/54678e0a/IRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/5b/70b7e8e4/GraphicsSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/9b/7131ee07/RenderSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_bitnormal.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/3e/a92696ca/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/38/eccd2957/SphericalHarmonicsL2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/be/b471068f/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexPosition.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_PixelDepth.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DepthPre.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexnormal.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/4b/ab50e00a/Lightmapping.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_secondUV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/e9/c4524f8c/Shader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/556A7633-052F-4D42-A01F-F358B4E15AEE/f6/0e47d900/IBeforeCameraRender.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/556A7633-052F-4D42-A01F-F358B4E15AEE/80/40341851/IRendererSetup.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_DrawSceneColor.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_ClusterDepthPre.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_bitnormal.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_PixelDepth.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_secondUV.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexnormal.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexPosition.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Hatching.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_LPG.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLine.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_OutLineNL.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilContour.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_PencilSketch.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Ramp.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_SilhouetteExtraction.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_StylizedHighlights.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToneBasedShading.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_ToonCeil.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_BlinnPhong.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_DiffusePixel.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_Phone.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_0.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_1.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_2.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/ExtendProperty/RenderExample_EPropety_ViewDir.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.computer" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" />
+        <option value="$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Package/package.json" />
+        <option value="$PROJECT_DIR$/Assets/Package/STFEngine_Example_PackageLib.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="291" />
+    <option name="y" value="40" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="DZRenderExample" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="DZRenderExample" type="1045f7f1:UnityExplorerNode" />
+              <item name="RenderTech" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Package" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Package" type="1045f7f1:UnityExplorerNode" />
+              <item name="CoreRPL" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="" />
+      <created>1565677690473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565677690473</updated>
+      <workItem from="1565677694666" duration="851000" />
+      <workItem from="1565678565781" duration="79000" />
+      <workItem from="1565678833323" duration="3133000" />
+      <workItem from="1565682353603" duration="5246000" />
+      <workItem from="1565688804901" duration="8959000" />
+      <workItem from="1565704543379" duration="752000" />
+      <workItem from="1565705901442" duration="642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19662000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1942605" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32984293" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JSON Viewer" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Json Parser" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe Transparent.mat" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/NPR/RenderExample_Feature_NPR_Wireframe.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_BlinnPhong.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_DiffusePixel.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/LightMode/RenderExample_LightBase_Phone.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_0.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_1.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/Fundamentals/RenderExample_ShaderFrag_2.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/ExtendProperty/RenderExample_EPropety_ViewDir.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.computer" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.1.2/PostProcessing/Runtime/PostProcessLayer.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.1.2/PostProcessing/Runtime/PostProcessEvent.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <marker date="1565688733630" expanded="true" signature="35:1847" ph="{...}" />
+            <marker date="1565688733630" expanded="true" signature="57:250" ph="{...}" />
+            <marker date="1565688733630" expanded="true" signature="270:1845" ph="{...}" />
+            <marker date="1565688733630" expanded="true" signature="293:1839" ph="{...}" />
+            <marker date="1565688733630" expanded="true" signature="348:1824" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/00/851fca56/ComputeBuffer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+          <folding>
+            <marker date="1565695586698" expanded="true" signature="7:57" ph="..." />
+            <marker date="1565695586698" expanded="true" signature="93:3240" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="161:3238" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="236:330" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="788:1941" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="1176:1386" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="1399:1479" ph="/* 写入 数据到 computeBuffer ... */" />
+            <marker date="1565695586698" expanded="true" signature="1548:1634" ph="/* Compute Shader 里可执行函数的 id, 后面update里调用 ... */" />
+            <marker date="1565695586698" expanded="true" signature="2014:2688" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="2070:2202" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="2228:2313" ph="/* 传递 int float Vector3 等数据 Vector2 和 Vector3 要转成 float[2] ... */" />
+            <marker date="1565695586698" expanded="true" signature="2724:2887" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="2941:3105" ph="{...}" />
+            <marker date="1565695586698" expanded="true" signature="3131:3223" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/STF_RE_SimpleSRP.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/be/b471068f/IDisposable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/61/54678e0a/IRenderPipeline.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="73" lean-forward="true" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Shaders/SimpleLit.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="312" selection-start-line="312" selection-end-line="312" />
+          <folding>
+            <marker date="1565679171649" expanded="false" signature="6:90" ph="..." />
+            <marker date="1565679171649" expanded="true" signature="126:21870" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="158:478" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="503:571" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="601:1597" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="1684:21868" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="2898:2952" ph="/// Light ... " />
+            <marker date="1565679171649" expanded="true" signature="3057:3117" ph="/// SceneObject ... " />
+            <marker date="1565679171649" expanded="true" signature="3818:5131" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="3877:3997" ph="/* Init RT ... */" />
+            <marker date="1565679171649" expanded="true" signature="4403:4525" ph="/* On Reisze ... */" />
+            <marker date="1565679171649" expanded="true" signature="4563:4686" ph="/* Init Light ... */" />
+            <marker date="1565679171649" expanded="true" signature="4886:4948" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="4962:5090" ph="/* Init SceneObject ... */" />
+            <marker date="1565679171649" expanded="true" signature="5216:6074" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="5477:5549" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="6115:6891" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="6933:8099" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="8129:8221" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="8262:9232" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="9271:9779" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="9830:10379" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="10415:11111" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="10513:11065" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="11145:11782" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="11819:12803" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="12835:13037" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="12918:13027" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="13090:13886" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="13941:14864" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="14898:15274" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="15031:15200" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="15303:15500" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="15412:15490" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="15540:17306" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="16306:16575" ph="/* The depth of the cluster grid during clustered rendering is dependent on the ... */" />
+            <marker date="1565679171649" expanded="true" signature="17339:17589" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="17475:17536" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="17632:18032" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="17884:17965" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="18067:18342" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="18210:18277" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="18367:18914" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="18390:18511" ph="/* Init Dim ... */" />
+            <marker date="1565679171649" expanded="true" signature="18738:18870" ph="/* Init Cluster Buffers ... */" />
+            <marker date="1565679171649" expanded="true" signature="18949:19928" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="19960:20399" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="20262:20340" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="20436:20770" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="20802:21862" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="21098:21171" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="21313:21373" ph="{...}" />
+            <marker date="1565679171649" expanded="true" signature="21524:21852" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <marker date="1565699433757" expanded="true" signature="45:1758" ph="{...}" />
+            <marker date="1565699433757" expanded="true" signature="52:97" ph="/// 合并网格 ... " />
+            <marker date="1565699433757" expanded="true" signature="146:1756" ph="{...}" />
+            <marker date="1565699433757" expanded="true" signature="194:269" ph="/* void Start() ... */" />
+            <marker date="1565699433757" expanded="true" signature="280:1750" ph="/* 合并网格 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/ShaderLibrary/Lighting.hlsl" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Shaders/Unlit.shader" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Shaders/DepthOnlyPass.hlsl" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <marker date="1565697404245" expanded="true" signature="6:120" ph="..." />
+            <marker date="1565697404245" expanded="true" signature="169:787" ph="{...}" />
+            <marker date="1565697404245" expanded="true" signature="176:299" ph="///   &lt;para&gt;When the IRenderPipeline is invalid or destroyed this returns true.&lt;/para&gt; ... " />
+            <marker date="1565697404245" expanded="true" signature="324:365" ph="{...}" />
+            <marker date="1565697404245" expanded="true" signature="371:636" ph="///   &lt;para&gt;Defines custom rendering for this RenderPipeline.&lt;/para&gt; ... " />
+            <marker date="1565697404245" expanded="true" signature="716:737" ph="{...}" />
+            <marker date="1565697404245" expanded="true" signature="764:785" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Shaders/LitForwardPass.hlsl" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/5b/70b7e8e4/GraphicsSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/9b/7131ee07/RenderSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="194" column="39" selection-start-line="194" selection-start-column="39" selection-end-line="194" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/2b/e24dc512/RenderPipeline.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/38/eccd2957/SphericalHarmonicsL2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <marker date="1565699823128" expanded="true" signature="0:343" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1565699823128" expanded="false" signature="351:492" ph="..." />
+            <marker date="1565699823128" expanded="true" signature="525:13893" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="530:651" ph="///   &lt;para&gt;Spherical harmonics up to the second order (3 bands, 9 coefficients).&lt;/para&gt; ... " />
+            <marker date="1565699823128" expanded="true" signature="811:13891" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="1469:1549" ph="///   &lt;para&gt;Clears SH probe to zero.&lt;/para&gt; ... " />
+            <marker date="1565699823128" expanded="true" signature="1573:1607" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="1635:1702" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="1708:1836" ph="///   &lt;para&gt;Add ambient lighting to probe data.&lt;/para&gt; ... " />
+            <marker date="1565699823128" expanded="true" signature="1881:1967" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="1973:2184" ph="///   &lt;para&gt;Add directional light to probe data.&lt;/para&gt; ... " />
+            <marker date="1565699823128" expanded="true" signature="2269:2413" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="2565:2676" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="2682:3296" ph="///   &lt;para&gt;Evaluates the Spherical Harmonics for each of the given directions. The result from the first directi ... " />
+            <marker date="1565699823128" expanded="true" signature="3360:3828" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="4088:7606" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="4104:5577" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="4151:5569" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="5587:7600" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="5634:7592" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="7645:8563" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="8610:8711" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="8763:8803" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="8904:9809" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="8957:9802" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="9910:10815" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="9963:10808" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="10931:11971" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="10984:11964" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="12059:13240" ph="{...}" />
+            <marker date="1565699823128" expanded="true" signature="13328:13368" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/4b/ab50e00a/Lightmapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/e9/c4524f8c/Shader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2305">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/556A7633-052F-4D42-A01F-F358B4E15AEE/f6/0e47d900/IBeforeCameraRender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Runtime/IAfterDepthPrePass.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Runtime/LightweightRenderPipeline.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Runtime/Passes/ScriptableRenderPass.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Runtime/Passes/CopyColorPass.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Runtime/LightweightRenderPipelineCore.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@4.10.0-preview/Runtime/ScriptableRenderer.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/Unity.RenderPipelines.Lightweight.Runtime.asmdef" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/3f/d1fe2173/ScriptableRenderContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="187" column="16" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Package/CoreRP/Runtime/Utilities/CoreUnsafeUtils.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1565320506711" expanded="false" signature="6:78" ph="..." />
+            <marker date="1565320506711" expanded="true" signature="124:1552" ph="{...}" />
+            <marker date="1565320506711" expanded="true" signature="158:241" ph="{...}" />
+            <marker date="1565320506711" expanded="true" signature="509:703" ph="{...}" />
+            <marker date="1565320506711" expanded="true" signature="744:805" ph="{...}" />
+            <marker date="1565320506711" expanded="true" signature="869:1546" ph="{...}" />
+            <marker date="1565320506711" expanded="true" signature="945:985" ph="{...}" />
+            <marker date="1565320506711" expanded="true" signature="1019:1540" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/556A7633-052F-4D42-A01F-F358B4E15AEE/80/40341851/IRendererSetup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/556A7633-052F-4D42-A01F-F358B4E15AEE/98/ea6d998c/RenderingData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/1f/bbb67dc7/CullResults.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="856">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF5F04D6-6C19-4D96-86AB-314B6714BDBF/3e/a92696ca/Camera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="856">
+          <caret line="146" column="24" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/Passes/CopyColorPass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <marker date="1550319672000" expanded="false" signature="6:42" ph="..." />
+            <marker date="1550319672000" expanded="true" signature="108:3690" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="115:436" ph="/// Copy the given color buffer to the given destination color buffer. ... " />
+            <marker date="1550319672000" expanded="true" signature="490:3688" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="783:856" ph="/// Create the CopyColorPass ... " />
+            <marker date="1550319672000" expanded="true" signature="887:986" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="996:1244" ph="/// Configure the pass with the source and destination to execute on. ... " />
+            <marker date="1550319672000" expanded="true" signature="1329:1427" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="1586:3265" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="2441:3163" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="3353:3682" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="3525:3672" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/DefaultRendererSetup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <marker date="1550319672000" expanded="false" signature="6:76" ph="..." />
+            <marker date="1550319672000" expanded="true" signature="142:12486" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="201:12484" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="1966:3936" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="3313:3447" ph="/* RenderTexture format depends on camera and pipeline (HDR, non HDR, etc) ... */" />
+            <marker date="1550319672000" expanded="true" signature="4025:11634" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="5078:5479" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="5535:5677" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="5788:6034" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="6108:6429" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="7156:7514" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="7560:7750" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="8955:9316" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="9412:9562" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="9830:9979" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="10044:10192" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="10620:10836" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="10952:11103" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="11297:11385" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="11463:11617" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="11688:12478" ph="{...}" />
+            <marker date="1550319672000" expanded="true" signature="12096:12367" ph="/* TODO:  We don't have support to highp Texture2DMS currently and this breaks depth precision. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Package/STFEngine_Example_PackageLib.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
