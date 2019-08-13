@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZProgramer/GeneralizeSimpleMesh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/CustomRenderPipeLine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/HDRP.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Eveir/Ocean.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/Hire.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Feature/Light.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/GeomShader_Scene_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/GeomShader_Scene_01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/Shader/Node/Noise.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/ShaderG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/MAT_SenseTime_Effect_UPD.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/MAT_SenseTime_Effect_UPD.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/MAT_SenseTime_Effect_UPD_1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/MAT_SenseTime_Effect_UPD_1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_ExportGem.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_ExportGem.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_Hologram.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_Hologram.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_Hologram2.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_Hologram2.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_UPD.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_UPD.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_UPD2.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/SenseTime_Effect_UPD2.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/STFEngine/Module/Render.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.settings-manager/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.settings-manager/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,12 +273,12 @@
       <workItem from="1565705901442" duration="642000" />
       <workItem from="1565719773447" duration="293000" />
       <workItem from="1565720110408" duration="1270000" />
-      <workItem from="1565721426744" duration="3997000" />
+      <workItem from="1565721426744" duration="3998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25222000" />
+    <option name="totallyTimeSpent" value="25223000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
