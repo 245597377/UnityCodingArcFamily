@@ -285,7 +285,7 @@ namespace STFEngine.Render.Example
 
             mtl_DebugCluster.SetPass(0);
             //Graphics.DrawProceduralNow(MeshTopology.Points, m_DimData.clusterDimXYZ);
-            Graphics.DrawProceduralIndirect(MeshTopology.Points, cb_IAB_DrawDebugClusters);
+            Graphics.DrawProceduralIndirectNow(MeshTopology.Points, cb_IAB_DrawDebugClusters);
 
             GL.wireframe = false;
         }

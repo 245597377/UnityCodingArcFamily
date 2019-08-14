@@ -19,6 +19,7 @@ namespace STFEngine
                 return ins;
             }
         }
+        
         // Use this for initialization
         void Start()
         {

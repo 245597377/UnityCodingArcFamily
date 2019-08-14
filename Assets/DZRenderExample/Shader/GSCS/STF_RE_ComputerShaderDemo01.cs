@@ -8,7 +8,7 @@ namespace STFEngine.Render.Example
     public class STF_RE_ComputerShaderDemo01 : MonoBehaviour
     {
            //自定义结构用于基础数据在cpu和gpu运算间传递
-        public struct Particle
+        private struct Particle
         {
             public Vector3 position;
             public Vector3 velocity;
@@ -34,7 +34,7 @@ namespace STFEngine.Render.Example
         private Particle[] initBuffer;
         
         // Use this for initialization
-        void Start () 
+        private  void Start () 
         {
             //运算次数
             warpCount = Mathf.CeilToInt((float)size / WARP_SIZE);
@@ -46,11 +46,13 @@ namespace STFEngine.Render.Example
 
             initBuffer = new Particle[size];
 
-            for (int i = 0; i < size; i++)
+            for (var i = 0; i < size; i++)
             {
-                initBuffer[i] = new Particle();
-                initBuffer[i].position = mSpawnCenter.position + Random.insideUnitSphere * spawnRange;
-                initBuffer[i].velocity = Vector3.zero;
+                initBuffer[i] = new Particle
+                {
+                    position = mSpawnCenter.position + Random.insideUnitSphere * spawnRange, 
+                    velocity = Vector3.zero
+                };
             }
             //写入 数据到 computeBuffer
             //之后会用于在 cpu 到 compute shader 到 shader 直接传递参数
@@ -68,7 +70,7 @@ namespace STFEngine.Render.Example
         }
 	    
         // Update is called once per frame
-        void Update () 
+        private void Update () 
         {
 
             if (Input.GetKeyDown(KeyCode.R))
@@ -78,7 +80,7 @@ namespace STFEngine.Render.Example
             }
             var centerPosition1 = GetCenterPosition1();
             var centerPosition2 = GetCenterPosition2();
-            int vIsCanMove = Vector3.Distance(mTarget1.position, mTarget2.position) > mMinMoveDistance? 1:0;
+            var vIsCanMove = Vector3.Distance(mTarget1.position, mTarget2.position) > mMinMoveDistance? 1:0;
             computeShader.SetInt("shouldMove", vIsCanMove);
             computeShader.SetFloats("centerPosition1", centerPosition1);
             computeShader.SetFloats("centerPosition2", centerPosition2);
@@ -88,31 +90,30 @@ namespace STFEngine.Render.Example
             computeShader.Dispatch(kernelIndex, warpCount, 1, 1);
         }
 
-        float[] GetCenterPosition1()
+        private float[] GetCenterPosition1()
         {
             var v = mTarget1.position;
             return new float[] { v.x, v.y,v.z };
         }
         
-        float[] GetCenterPosition2()
+        private float[] GetCenterPosition2()
         {
             var v = mTarget2.position;
             return new float[] { v.x, v.y,v.z };
         }
         
         //渲染效果
-        void OnRenderObject()
+        private void OnRenderObject()
         {
             //写入材质球 pass
             material.SetPass(0);
             //渲染粒子
-            Graphics.DrawProcedural(MeshTopology.Points, 1, size);
+            Graphics.DrawProceduralNow(MeshTopology.Points, 1, size);
         }
 
-        void OnDestroy()
+        private void OnDestroy()
         {
-            if (particles != null)
-                particles.Release();
+            particles?.Release();
         }
         
     }
