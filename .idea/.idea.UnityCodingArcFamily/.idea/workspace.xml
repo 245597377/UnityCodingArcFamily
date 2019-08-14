@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="" />
+    <list default="true" id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,52 +16,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+            <state relative-caret-position="-1082">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
               <folding>
-                <marker date="1565723742170" expanded="false" signature="7:57" ph="..." />
-                <marker date="1565723742170" expanded="true" signature="93:3742" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="161:3740" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="236:330" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="986:2163" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="1374:1608" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="1621:1701" ph="/* 写入 数据到 computeBuffer ... */" />
-                <marker date="1565723742170" expanded="true" signature="1770:1856" ph="/* Compute Shader 里可执行函数的 id, 后面update里调用 ... */" />
-                <marker date="1565723742170" expanded="true" signature="2236:3089" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="2292:2424" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="3127:3235" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="3281:3389" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="3443:3607" ph="{...}" />
-                <marker date="1565723742170" expanded="true" signature="3633:3725" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="7:57" ph="..." />
+                <marker date="1565749171304" expanded="true" signature="93:3742" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="161:3740" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="236:330" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="986:2163" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="1374:1608" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="1621:1701" ph="/* 写入 数据到 computeBuffer ... */" />
+                <marker date="1565749171304" expanded="true" signature="1770:1856" ph="/* Compute Shader 里可执行函数的 id, 后面update里调用 ... */" />
+                <marker date="1565749171304" expanded="true" signature="2236:3089" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="2292:2424" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="3127:3235" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="3281:3389" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="3443:3607" ph="{...}" />
+                <marker date="1565749171304" expanded="true" signature="3633:3725" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader">
+        <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="36" />
-              <folding>
-                <marker date="1565722952560" expanded="true" signature="35:1841" ph="{...}" />
-                <marker date="1565722952560" expanded="true" signature="57:250" ph="{...}" />
-                <marker date="1565722952560" expanded="true" signature="270:1839" ph="{...}" />
-                <marker date="1565722952560" expanded="true" signature="293:1833" ph="{...}" />
-                <marker date="1565722952560" expanded="true" signature="348:1818" ph="{...}" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -82,31 +72,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_secondUV.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DepthPre.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexPosition.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/DefaultRendererSetup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_Hologram.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexnormal.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_ExportGem.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_PixelDepth.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_bitnormal.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DrawSceneColor.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/Passes/CopyColorPass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_bitnormal.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexPosition.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Package/Lightweight/Runtime/DefaultRendererSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_PixelDepth.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DepthPre.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexnormal.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_secondUV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DrawSceneColor.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,6 +162,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -181,34 +174,11 @@
               <item name="" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="8711f2a6:AssetsRoot" />
             </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="DZRenderExample" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="DZRenderExample" type="1045f7f1:UnityExplorerNode" />
-              <item name="Shader" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="DZRenderExample" type="1045f7f1:UnityExplorerNode" />
-              <item name="Shader" type="1045f7f1:UnityExplorerNode" />
-              <item name="GSCS" type="1045f7f1:UnityExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -224,7 +194,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,11 +244,12 @@
       <workItem from="1565719773447" duration="293000" />
       <workItem from="1565720110408" duration="1270000" />
       <workItem from="1565721426744" duration="3998000" />
+      <workItem from="1565754194314" duration="1363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25223000" />
+    <option name="totallyTimeSpent" value="26586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -292,7 +263,7 @@
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.200883" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2030905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -541,85 +512,50 @@
     <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_UPD2.shadergraph" />
     <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_Hologram2.shadergraph" />
     <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_UPD.shadergraph" />
-    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Shader Graphs-STF_RE_Effect_UPD.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1565720297876" expanded="true" signature="0:409" ph="/* Compiled shader for custom platforms ... */" />
-            <marker date="1565720297876" expanded="true" signature="477:714" ph="/* Compiled programs ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_Hologram.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="27" />
-          <folding>
-            <marker date="1565720336186" expanded="true" signature="37:1661" ph="{...}" />
-            <marker date="1565720336186" expanded="true" signature="52:272" ph="{...}" />
-            <marker date="1565720336186" expanded="true" signature="286:1659" ph="{...}" />
-            <marker date="1565720336186" expanded="true" signature="417:1656" ph="{...}" />
-            <marker date="1565720336186" expanded="true" signature="431:1647" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_ExportGem.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-          <folding>
-            <marker date="1565720027641" expanded="true" signature="38:1572" ph="{...}" />
-            <marker date="1565720027641" expanded="true" signature="53:180" ph="{...}" />
-            <marker date="1565720027641" expanded="true" signature="195:1570" ph="{...}" />
-            <marker date="1565720027641" expanded="true" signature="256:1566" ph="{...}" />
-            <marker date="1565720027641" expanded="true" signature="271:1556" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Shader Graphs-STF_RE_Effect_UPD.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_Hologram.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/UnpackShader/workShaders/EffectShader/STF_RE_Effect_ExportGem.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding>
-            <marker date="1565722952560" expanded="true" signature="35:1841" ph="{...}" />
-            <marker date="1565722952560" expanded="true" signature="57:250" ph="{...}" />
-            <marker date="1565722952560" expanded="true" signature="270:1839" ph="{...}" />
-            <marker date="1565722952560" expanded="true" signature="293:1833" ph="{...}" />
-            <marker date="1565722952560" expanded="true" signature="348:1818" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
-          <folding>
-            <marker date="1565723742170" expanded="false" signature="7:57" ph="..." />
-            <marker date="1565723742170" expanded="true" signature="93:3742" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="161:3740" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="236:330" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="986:2163" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="1374:1608" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="1621:1701" ph="/* 写入 数据到 computeBuffer ... */" />
-            <marker date="1565723742170" expanded="true" signature="1770:1856" ph="/* Compute Shader 里可执行函数的 id, 后面update里调用 ... */" />
-            <marker date="1565723742170" expanded="true" signature="2236:3089" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="2292:2424" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="3127:3235" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="3281:3389" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="3443:3607" ph="{...}" />
-            <marker date="1565723742170" expanded="true" signature="3633:3725" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="35:1841" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="57:250" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="270:1839" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="293:1833" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="348:1818" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1082">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <marker date="1565749171304" expanded="true" signature="7:57" ph="..." />
+            <marker date="1565749171304" expanded="true" signature="93:3742" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="161:3740" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="236:330" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="986:2163" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="1374:1608" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="1621:1701" ph="/* 写入 数据到 computeBuffer ... */" />
+            <marker date="1565749171304" expanded="true" signature="1770:1856" ph="/* Compute Shader 里可执行函数的 id, 后面update里调用 ... */" />
+            <marker date="1565749171304" expanded="true" signature="2236:3089" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="2292:2424" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="3127:3235" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="3281:3389" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="3443:3607" ph="{...}" />
+            <marker date="1565749171304" expanded="true" signature="3633:3725" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
