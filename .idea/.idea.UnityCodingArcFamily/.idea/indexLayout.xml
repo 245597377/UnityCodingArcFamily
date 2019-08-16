@@ -4,9 +4,9 @@
     <attachedFolders>
       <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.1.1-preview</Path>
       <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.1.1-preview</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.timeline@1.1.0</Path>
     </attachedFolders>
     <explicitIncludes>
-      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.timeline@1.1.0</Path>
       <Path>Library/PackageCache/com.unity.burst@1.1.2</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
       <Path>Library/PackageCache/com.unity.collections@0.1.1-preview</Path>
@@ -16,9 +16,12 @@
       <Path>Library/PackageCache/com.unity.ide.vscode@1.0.7</Path>
       <Path>Library/PackageCache/com.unity.jobs@0.1.1-preview</Path>
       <Path>Library/PackageCache/com.unity.mathematics@1.1.0</Path>
+      <Path>Library/PackageCache/com.unity.postprocessing@2.1.6</Path>
+      <Path>Library/PackageCache/com.unity.probuilder@4.0.5</Path>
       <Path>Library/PackageCache/com.unity.properties@0.6.2-preview</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@6.9.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.high-definition@6.9.1-preview</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.lightweight@6.9.1</Path>
       <Path>Library/PackageCache/com.unity.shadergraph@6.9.1</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
       <Path>Library/PackageCache/com.unity.visualeffectgraph@6.9.1-preview</Path>
@@ -31,7 +34,6 @@
       <Path>.idea</Path>
       <Path>.vs</Path>
       <Path>.vscode</Path>
-      <Path>CgIncludes</Path>
       <Path>DOC</Path>
       <Path>Library</Path>
       <Path>Logs</Path>

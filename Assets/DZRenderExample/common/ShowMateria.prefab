@@ -57,6 +57,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -157,6 +158,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -228,6 +230,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829aa83910a0f864fb77121bc509b1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StandMat: {fileID: 0}
+  LWRPMat: {fileID: 0}
+  HDRPMat: {fileID: 0}
+  CustomMat: {fileID: 0}
+  previewMesh: {fileID: 3261889143352786325}
+  logText: {fileID: 1948903498}
+  mCurrShowPipeline: 0
 --- !u!1 &3261889143352786327
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +303,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

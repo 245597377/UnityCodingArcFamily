@@ -18,15 +18,13 @@ public class MaterialPreview : MonoBehaviour
 
     public Material CustomMat;
 
-    public MeshRenderer previewMesh;
+    public MeshRenderer[] previewMesh;
 
     public TextMesh logText;
 
     public ERenderPipeline mCurrShowPipeline;
     public void RefreshMesh()
     {
-        Transform c1 = transform.GetChild(0);
-        previewMesh = c1!=null? c1.GetComponentInChildren<MeshRenderer>() : null;
         logText = GetComponentInChildren<TextMesh>();
     }
 
@@ -38,28 +36,33 @@ public class MaterialPreview : MonoBehaviour
     public void ChangeRenderPipeline(ERenderPipeline pipeLine)
     {
         mCurrShowPipeline = pipeLine;
-        if(previewMesh == null)
+        if(previewMesh == null || previewMesh.Length <= 0)
         {
             return;
         }
-        switch(mCurrShowPipeline)
+
+        for (int i = 0; i < previewMesh.Length; i++)
         {
-            case  ERenderPipeline.Stand:
-                   previewMesh.sharedMaterial = StandMat;
-                   break;
+            switch(mCurrShowPipeline)
+            {
+                case  ERenderPipeline.Stand:
+                    previewMesh[i].sharedMaterial = StandMat;
+                    break;
 
-            case  ERenderPipeline.LWRP:
-                   previewMesh.sharedMaterial = LWRPMat;
-                   break;
+                case  ERenderPipeline.LWRP:
+                    previewMesh[i].sharedMaterial = LWRPMat;
+                    break;
 
-            case  ERenderPipeline.HDRP:
-                   previewMesh.sharedMaterial = HDRPMat;
-                   break;
+                case  ERenderPipeline.HDRP:
+                    previewMesh[i].sharedMaterial = HDRPMat;
+                    break;
 
-            case  ERenderPipeline.Custom:
-                   previewMesh.sharedMaterial = CustomMat;
-                   break;
+                case  ERenderPipeline.Custom:
+                    previewMesh[i].sharedMaterial = CustomMat;
+                    break;
+            }
         }
+      
     }
    
 }

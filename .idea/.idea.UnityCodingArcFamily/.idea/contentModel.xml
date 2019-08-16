@@ -68,6 +68,9 @@
               </e>
             </e>
             <e p="Feature" t="Include">
+              <e p="Hire" t="Include">
+                <e p="STF_RE_Feature_Hair_Base.shader" t="Include" />
+              </e>
               <e p="NPR" t="Include">
                 <e p="STF_RE_Feature_NPR_Hatching.shader" t="Include" />
                 <e p="STF_RE_Feature_NPR_LPG.shader" t="Include" />
@@ -110,6 +113,11 @@
           </e>
           <e p="Fantasy Forest Environment Free Sample" t="Include">
             <e p="StandardNoCulling.shader" t="Include" />
+          </e>
+          <e p="UnpackRes" t="Include">
+            <e p="Hair.shader" t="Include" />
+            <e p="HairBxDF.cginc" t="Include" />
+            <e p="HairSurf.cginc" t="Include" />
           </e>
         </e>
         <e p="STFEngine" t="Include">
