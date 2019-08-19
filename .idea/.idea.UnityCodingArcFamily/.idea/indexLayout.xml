@@ -17,19 +17,23 @@
       <Path>Library/PackageCache/com.unity.collections@0.1.1-preview</Path>
       <Path>Library/PackageCache/com.unity.entities@0.1.1-preview</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
-      <Path>Library/PackageCache/com.unity.ide.rider@1.0.8</Path>
+      <Path>Library/PackageCache/com.unity.ide.rider@1.1.0</Path>
       <Path>Library/PackageCache/com.unity.ide.vscode@1.0.7</Path>
       <Path>Library/PackageCache/com.unity.jobs@0.1.1-preview</Path>
       <Path>Library/PackageCache/com.unity.mathematics@1.1.0</Path>
-      <Path>Library/PackageCache/com.unity.postprocessing@2.1.6</Path>
-      <Path>Library/PackageCache/com.unity.probuilder@4.0.5</Path>
+      <Path>Library/PackageCache/com.unity.postprocessing@2.1.7</Path>
+      <Path>Library/PackageCache/com.unity.probuilder@4.1.0</Path>
       <Path>Library/PackageCache/com.unity.properties@0.6.2-preview</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.core@6.9.1</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.high-definition@6.9.1-preview</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.lightweight@6.9.1</Path>
-      <Path>Library/PackageCache/com.unity.shadergraph@6.9.1</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.core@7.0.1</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.high-definition-config@7.0.1</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.high-definition@7.0.1</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.lightweight@7.0.1</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.0.1</Path>
+      <Path>Library/PackageCache/com.unity.settings-manager@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.shadergraph@7.0.1</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
-      <Path>Library/PackageCache/com.unity.visualeffectgraph@6.9.1-preview</Path>
+      <Path>Library/PackageCache/com.unity.timeline@1.1.0</Path>
+      <Path>Library/PackageCache/com.unity.visualeffectgraph@7.0.1</Path>
       <Path>Library/PackageCache/nuget.mono-cecil@0.1.6-preview</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
@@ -41,6 +45,7 @@
       <Path>.vscode</Path>
       <Path>CgIncludes</Path>
       <Path>DOC</Path>
+      <Path>Library</Path>
       <Path>Logs</Path>
       <Path>README.assets</Path>
       <Path>Temp</Path>

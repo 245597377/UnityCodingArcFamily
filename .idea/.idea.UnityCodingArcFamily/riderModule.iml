@@ -9,10 +9,6 @@
     <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ide.vscode@1.0.7" />
     <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@2.0.1" />
     <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.timeline@1.1.0" />
-    <content url="file://D:/Program Files/Unity/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline/Editor" />
-    <content url="file://D:/Program Files/Unity/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.timeline/Runtime" />
-    <content url="file://D:/Program Files/Unity/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor" />
-    <content url="file://D:/Program Files/Unity/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
