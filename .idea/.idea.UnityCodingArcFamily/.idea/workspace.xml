@@ -5,10 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,28 +30,26 @@
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_PixelDepth.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_bitnormal.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/SpaceTrans/STF_RE_ColorTrans_Gram.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DrawSceneColor.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_secondUV.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DepthPre.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/STFEngine/STF_Engine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexPosition.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexnormal.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F37B2CA-7BC0-4094-93C9-29A81891A481/83/e4e3ae51/MeshRenderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/STFEngine/STF_Engine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Res/UnpackRes/Hair.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/CustomRP/Runtime/STF_RE_RP_BaseCustomRP.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -107,6 +101,8 @@
         <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" />
         <option value="$PROJECT_DIR$/Assets/STFEngine/STF_Engine.cs" />
         <option value="$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/CustomRP/STF_RE_RP_BaseCustomRP.cs" />
+        <option value="$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/CustomRP/Runtime/STF_RE_RP_BaseCustomRP.cs" />
       </list>
     </option>
   </component>
@@ -140,18 +136,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1456">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="1456" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1456">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="1456" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -196,6 +192,7 @@
       <workItem from="1565804979942" duration="780000" />
       <workItem from="1566186052500" duration="1191000" />
       <workItem from="1566222325898" duration="407000" />
+      <workItem from="1566239594570" duration="2162000" />
     </task>
     <servers />
   </component>
@@ -233,6 +230,40 @@
     <state x="671" y="266" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.1080" />
     <state x="731" y="389" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" />
     <state x="731" y="389" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/1920.1080" />
+    <state width="398" height="624" key="DebuggerActiveHint" />
+    <state width="398" height="624" key="DebuggerActiveHint/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.0.bottom" />
+    <state width="1814" height="355" key="GridCell.Tab.0.bottom/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.0.center" />
+    <state width="1814" height="355" key="GridCell.Tab.0.center/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.0.left" />
+    <state width="1814" height="355" key="GridCell.Tab.0.left/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.0.right" />
+    <state width="1814" height="355" key="GridCell.Tab.0.right/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.1.bottom" />
+    <state width="1814" height="355" key="GridCell.Tab.1.bottom/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.1.center" />
+    <state width="1814" height="355" key="GridCell.Tab.1.center/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.1.left" />
+    <state width="1814" height="355" key="GridCell.Tab.1.left/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.1.right" />
+    <state width="1814" height="355" key="GridCell.Tab.1.right/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.2.bottom" />
+    <state width="1814" height="355" key="GridCell.Tab.2.bottom/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.2.center" />
+    <state width="1814" height="355" key="GridCell.Tab.2.center/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.2.left" />
+    <state width="1814" height="355" key="GridCell.Tab.2.left/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.2.right" />
+    <state width="1814" height="355" key="GridCell.Tab.2.right/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.3.bottom" />
+    <state width="1814" height="355" key="GridCell.Tab.3.bottom/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.3.center" />
+    <state width="1814" height="355" key="GridCell.Tab.3.center/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.3.left" />
+    <state width="1814" height="355" key="GridCell.Tab.3.left/1920.1080" />
+    <state width="1814" height="355" key="GridCell.Tab.3.right" />
+    <state width="1814" height="355" key="GridCell.Tab.3.right/1920.1080" />
     <state x="672" y="353" width="769" height="321" key="LayersDialog" />
     <state x="672" y="353" width="769" height="321" key="LayersDialog/1920.1080" />
     <state x="274" y="244" key="SettingsEditor" />
