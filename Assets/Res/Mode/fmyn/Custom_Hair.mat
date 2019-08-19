@@ -31,6 +31,6 @@ Material:
     - _EccentricityMean: -16.05
     m_Colors:
     - _ColorVariationRange: {r: 1.51, g: 0.5, b: 0, a: 0.255}
-    - _RootColor: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
-    - _RoughnessRange: {r: 0.27, g: 0.87, b: 0.07, a: 1}
-    - _TipColor: {r: 1, g: 0.28773582, b: 0.28773582, a: 1}
+    - _RootColor: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
+    - _RoughnessRange: {r: 0.33, g: 0.87, b: 0.07, a: 1}
+    - _TipColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
