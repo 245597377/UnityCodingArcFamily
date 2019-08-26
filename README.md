@@ -72,10 +72,25 @@ Shader/CS
        <source id="mp4" src="DOC/Render/Shader/Rec/ResC_CS01.mp4" type="video/mp4">
 </video>
 
- 
 
 
+
+## CODing DO RenderPipe:
+
+
+
+1\ Base
+
+![1566845870596](README.assets/1566845870596.png)
 
 ---------------------
+2\  Cull And PrePass
+
+3\  Fruse
+
+...
+
+
+
 版权声明：小道，转载请附上原文出处链接及本声明。
 

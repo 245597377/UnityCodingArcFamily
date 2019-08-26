@@ -36,19 +36,13 @@ namespace STFEngine.Render.Example.RenderPipeline
         private bool isInit = false;
         private void Start()
         {
-            if (!isInit)
-            {
-                DoInit();
-            }
+            isInit = false;
+            DoInit();
         }
 
-        private void InitBaseRenderRes()
+        private void DoInit()
         {
-            _cameraTarget = new RenderTexture(Screen.width,Screen.height,24);
-        }
-        
-        private void InitLightRenderRes()
-        {
+            _cameraTarget = new RenderTexture(Screen.width,Screen.height,0);
             _gbufferTexture = new RenderTexture[]
             {
                 new RenderTexture(Screen.width,Screen.height,0,RenderTextureFormat.ARGBHalf,RenderTextureReadWrite.Linear), 
@@ -65,19 +59,16 @@ namespace STFEngine.Render.Example.RenderPipeline
 
             _gbufferIDS = new int[]
             {
-                Shader.PropertyToID("_GBuffers0"),
-                Shader.PropertyToID("_GBuffers1"),
-                Shader.PropertyToID("_GBuffers2"),
-                Shader.PropertyToID("_GBuffers3")
+                Shader.PropertyToID("_GBuffer0"),
+                Shader.PropertyToID("_GBuffer1"),
+                Shader.PropertyToID("_GBuffer2"),
+                Shader.PropertyToID("_GBuffer3")
             };
+      
         }
+        
 
-        private void DoInit()
-        {
-            InitBaseRenderRes();
-            InitLightRenderRes();
-            isInit = true;
-        }
+     
         private void OnPostRender()
         {
             _camera = Camera.main;
@@ -86,16 +77,13 @@ namespace STFEngine.Render.Example.RenderPipeline
                 return;
             }
 
-            if (!isInit)
-            {
-                DoInit();
-            }
+         
             Shader.SetGlobalTexture(_DepthTextureID, _depthTexture);
             Graphics.SetRenderTarget(_gbuffers, _depthTexture.depthBuffer);
             GL.Clear(true,true,Color.grey);
             DrawMesh();
-            DrawSkyBox();
             DrawLight(_gbufferTexture,_gbufferIDS,_cameraTarget,_camera);
+            DrawSkyBox(_cameraTarget.colorBuffer,_depthTexture.depthBuffer);
             Graphics.Blit(_cameraTarget,_camera.targetTexture);
         }
 
@@ -164,7 +152,7 @@ namespace STFEngine.Render.Example.RenderPipeline
             }
         }
 
-        private void DrawSkyBox()
+        private void DrawSkyBox(RenderBuffer pColorTarget,RenderBuffer pDepthTarget)
         {
             if (mSkyBoxMaterial == null || mCornelShaderKeyName.Equals(""))
             {
@@ -176,6 +164,7 @@ namespace STFEngine.Render.Example.RenderPipeline
             _mCorNel[3] = _camera.ViewportToWorldPoint(new Vector3(1, 1, _camera.farClipPlane));
             mSkyBoxMaterial.SetVectorArray(mCornelShaderKeyName,_mCorNel);
             mSkyBoxMaterial.SetPass(0);
+            Graphics.SetRenderTarget(pColorTarget, pDepthTarget);
             Graphics.DrawMeshNow(SkyBoxMesh, Matrix4x4.identity);
         }
 

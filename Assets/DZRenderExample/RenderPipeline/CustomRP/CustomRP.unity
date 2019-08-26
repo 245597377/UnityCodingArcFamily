@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 48dce76358a3cc740b45c34288eae783, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -171,7 +171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eeb72c71e3ebc7848be63ae910520823, type: 2}
+  - {fileID: 2100000, guid: 72ddbcd980313cd4da7217f10085a196, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -199,7 +199,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70272804}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &70272808
 Transform:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eeb72c71e3ebc7848be63ae910520823, type: 2}
+  - {fileID: 2100000, guid: e33ad4c3f64b4024c8b2f2de2d8e7887, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -292,7 +292,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123387541}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &123387545
 Transform:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 07bc08f3ed517d14da8f4f3efffdb3b0, type: 2}
+  - {fileID: 2100000, guid: 7fd740496fca4f24e9ae206593cd273f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4074a432c46738547a35f75ebbd39227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mSkyBoxMaterial: {fileID: 2100000, guid: 8014a85bc0827334c8741430eb396711, type: 2}
+  mSkyBoxMaterial: {fileID: 2100000, guid: d0152ffcaf365d440816adb957412b8d, type: 2}
   mCornelShaderKeyName: _cornel
   _deferrenedMat: {fileID: 2100000, guid: 353b92d67dd2aed4a843353cb009b60c, type: 2}
   directionalLight: {fileID: 1818419227}
@@ -603,13 +603,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818419226}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.14958347, y: 0.9864037, z: -0.06330262, w: 0.025007045}
+  m_LocalPosition: {x: 0, y: 3, z: 12.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.6060004, y: 178.24301, z: 17.129002}
 --- !u!1 &2099163605
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +660,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eeb72c71e3ebc7848be63ae910520823, type: 2}
+  - {fileID: 2100000, guid: 4d9c14bb8bf532543bcba66f3afcb829, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -688,7 +688,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099163605}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2099163609
 Transform:
   m_ObjectHideFlags: 0

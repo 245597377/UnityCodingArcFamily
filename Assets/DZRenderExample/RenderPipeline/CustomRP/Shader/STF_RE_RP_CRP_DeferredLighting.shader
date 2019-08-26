@@ -4,7 +4,7 @@
 	{
         Pass
 		{
-		    ZWrite off ZTest Always Cull off
+		    Cull Off ZWrite Off ZTest Always
 			CGPROGRAM
 			
 			#pragma target 5.0
@@ -14,7 +14,8 @@
 			#include "UnityStandardUtils.cginc"
 			#include "UnityGBuffer.cginc"
 			#include "UnityStandardBRDF.cginc"
-
+            #pragma vertex vert
+			#pragma fragment frag
 
 			struct appdata
 			{
@@ -47,8 +48,7 @@
 
 		
 			
-			#pragma vertex vert
-			#pragma fragment frag
+			
 			float4 frag (v2f i) : SV_Target
 			{
 				UnityLight light;
@@ -72,6 +72,8 @@
     			float4 res = UNITY_BRDF_PBS (data.diffuseColor, data.specularColor, oneMinusReflectivity, data.smoothness, data.normalWorld, -eyeVec, light, ind);
 				res.rgb += gbuffer3.rgb;
 				return res;
+				
+				return float4(1.0,1.0,0.0,1.0);
 			}
 			ENDCG
 		}
