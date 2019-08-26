@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9804b5a1-4f17-43f4-b277-fe48f17d6606" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityCodingArcFamily/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/CustomRP/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,26 +32,29 @@
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/STF_RE_CluseAABB_Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_PixelDepth.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_bitnormal.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/SpaceTrans/STF_RE_ColorTrans_Gram.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DrawSceneColor.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_secondUV.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_Debug.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/RenderExample_Tech_Cluster_DepthPre.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/STFEngine/STF_Engine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexPosition.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_vertexnormal.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/STFEngine/Util/Mesh/ChinarMergeMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_Particle_Unit01.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_ComputerShaderDemo01.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/GSCS/STF_RE_CS_Demo01.compute" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/CustomRP/Runtime/STF_RE_RP_BaseCustomRP.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DZECSExample/BallMovement/BallComData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F37B2CA-7BC0-4094-93C9-29A81891A481/83/e4e3ae51/MeshRenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/STFEngine/STF_Engine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderPipeline/SRP_Custom/01/STF_RE_SRP_Demo01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/Cgs_ClusterCommon.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/STFEngine/Util/Camera/Runtime/STF_Util_FreeCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/common/MaterialPreview.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_Tangent.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_UV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/RenderTech/CluseAABB/CS_AssignLightsToClusters.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DZRenderExample/Shader/Base/UNityCGProperty/STF_RE_UnityProperty_firstUV.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Res/UnpackRes/Hair.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -193,6 +198,7 @@
       <workItem from="1566186052500" duration="1191000" />
       <workItem from="1566222325898" duration="407000" />
       <workItem from="1566239594570" duration="2162000" />
+      <workItem from="1566279388738" duration="651000" />
     </task>
     <servers />
   </component>
