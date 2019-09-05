@@ -12,19 +12,19 @@ namespace STFEngine.Util.Editor
     /// </summary>
     public class DZEditor_CreateEXFile : UnityEditor.Editor
     {
-        [MenuItem("Assets/DZEngineTool/File/Create/Lua File")]
+        [MenuItem("Assets/STFEngine/File/Create/Lua File")]
         static void CreateLuaFile()
         {
             CreateFile("lua");
         }
 
-        [MenuItem("Assets/DZEngineTool/File/Create/Text File")]
+        [MenuItem("Assets/STFEngine/File/Create/Text File")]
         static void CreateTextFile()
         {
             CreateFile("txt");
         }
 
-        [MenuItem("Assets/DZEngineTool/File/Create/HLSL File")]
+        [MenuItem("Assets/STFEngine/File/Create/HLSL File")]
         static void CreateHLSLFile()
         {
             CreateFile("hlsl");

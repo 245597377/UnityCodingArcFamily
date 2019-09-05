@@ -6,7 +6,7 @@ namespace STFEngine.Util.Editor
 
     public class SceneObjectHandle_Editor : EditorWindow
     {
-        [MenuItem("DZEngineTool/SceneTool/MoveSelectEd_Obj")]
+        [MenuItem("STFEngine/SceneTool/MoveSelectEd_Obj")]
         static void OpenMoveSeleWin()
         {
             SceneObjectHandle_Editor win = (SceneObjectHandle_Editor)EditorWindow.GetWindow(typeof(SceneObjectHandle_Editor), false, "DZEngine_SceneObjHandle_Win", true);

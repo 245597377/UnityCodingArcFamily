@@ -7,7 +7,7 @@ namespace STFEngine.Util.Editor
 
     class DZScriptError_Editor : EditorWindow
     {
-        [MenuItem("DZEngineTool/SceneTool/DZScriptError_Remove")]
+        [MenuItem("STFEngine/SceneTool/DZScriptError_Remove")]
         static void OpenMoveSeleWin()
         {
             DZScriptError_Editor win = (DZScriptError_Editor)EditorWindow.GetWindow(typeof(DZScriptError_Editor), false, "DZEngine_SceneObjHandle_Win", true);
