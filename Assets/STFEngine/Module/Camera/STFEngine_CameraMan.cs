@@ -11,7 +11,7 @@ namespace STFEngine.Module
         /// </summary>
         public Camera mUIMeshCamera;
         // Use this for initialization
-        void RefreshCamera(Camera pCamera)
+        public void RefreshCamera(Camera pCamera)
         {
             mMainCamera = pCamera;
         }
