@@ -5,7 +5,7 @@ namespace STFEngine.Util.Editor
 {
     public class CameraEditor_Tool
     {
-        [MenuItem("DZEngineTool/DZCameraTool/Align/SceneView")]
+        [MenuItem("STFEngine/DZCameraTool/Align/SceneView")]
         static void AlignToSceneView()
         {
             if (Selection.gameObjects.Length > 0)
@@ -23,7 +23,7 @@ namespace STFEngine.Util.Editor
             }
         }
 
-        [MenuItem("DZEngineTool/DZCameraTool/RunGameFromCurrView")]
+        [MenuItem("STFEngine/DZCameraTool/RunGameFromCurrView")]
         static void RunInCurrView()
         {
             if (Selection.gameObjects.Length > 0)
