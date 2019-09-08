@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 namespace STFEngine.Render.Example.ScriptRenderPipeline
 {
@@ -12,7 +14,10 @@ namespace STFEngine.Render.Example.ScriptRenderPipeline
         Material errorMaterial;
         private CullingResults outCull;
         private bool mIsStere = false;
-        
+        private FilteringSettings m_FilteringSettings;
+        private RenderStateBlock m_RenderStateBlock;
+        private List<ShaderTagId> m_ShaderTagIdList = new List<ShaderTagId>();
+        private StencilState m_DefaultStencilState;
         protected virtual void Dispose(bool disposing)
         {
             if (_cmdBf != null)
@@ -45,7 +50,7 @@ namespace STFEngine.Render.Example.ScriptRenderPipeline
         {
             if (pCamera.isActiveAndEnabled)
             {
-              
+               
                 pRenderContext.SetupCameraProperties(pCamera, mIsStere);
                 
                 _cmdBf.name = "Render Camera";
@@ -58,6 +63,12 @@ namespace STFEngine.Render.Example.ScriptRenderPipeline
                 pRenderContext.ExecuteCommandBuffer(_cmdBf);
                 _cmdBf.Clear();
                 
+#if UNITY_EDITOR
+                // Emit scene view UI
+                if (pCamera.cameraType == CameraType.SceneView)
+                    ScriptableRenderContext.EmitWorldGeometryForSceneView(pCamera);
+                              
+#endif
                 pRenderContext.DrawSkybox(pCamera);
 
 
@@ -69,21 +80,43 @@ namespace STFEngine.Render.Example.ScriptRenderPipeline
                 outCull = pRenderContext.Cull(ref vCullParameters);
                 int length =  outCull.visibleLights.Length;
 //                Debug.Log(length);
-              
-                FilteringSettings vFilterSetting = new FilteringSettings()
+                m_ShaderTagIdList = new List<ShaderTagId>();
+                m_ShaderTagIdList.Add(new ShaderTagId("UniversalForward"));
+                m_ShaderTagIdList.Add(new ShaderTagId("LightweightForward"));
+                m_ShaderTagIdList.Add(new ShaderTagId("SRPDefaultUnlit"));
+                m_FilteringSettings = new FilteringSettings(RenderQueueRange.opaque, ~0);
+                
+                StencilStateData stencilData = new StencilStateData();
+                m_DefaultStencilState = StencilState.defaultValue;
+                m_DefaultStencilState.enabled = stencilData.overrideStencilState;
+                m_DefaultStencilState.SetCompareFunction(stencilData.stencilCompareFunction);
+                m_DefaultStencilState.SetPassOperation(stencilData.passOperation);
+                m_DefaultStencilState.SetFailOperation(stencilData.failOperation);
+                m_DefaultStencilState.SetZFailOperation(stencilData.zFailOperation);
+                
+                m_RenderStateBlock = new RenderStateBlock(RenderStateMask.Nothing);
+                m_RenderStateBlock.stencilReference = stencilData.stencilReference;
+                m_RenderStateBlock.mask = RenderStateMask.Stencil;
+                m_RenderStateBlock.stencilState = m_DefaultStencilState;
+                
+                SortingSettings sortingSettings = new SortingSettings(pCamera) { criteria = SortingCriteria.CommonOpaque };
+                DrawingSettings settings = new DrawingSettings(m_ShaderTagIdList[0], sortingSettings)
                 {
-                    renderQueueRange = RenderQueueRange.opaque,
-                    layerMask = ~0
+                    perObjectData = PerObjectData.None,
+                    enableInstancing = true,
+                    mainLightIndex = 0,
+                    enableDynamicBatching = false,
                 };
-                SortingSettings sortingSettings = new SortingSettings(pCamera) { criteria = SortingCriteria.RenderQueue };
-                DrawingSettings vDrawingSettings = new DrawingSettings(new ShaderTagId("SRPDefaultUnlit"),sortingSettings);
-                vDrawingSettings.SetShaderPassName(0,new ShaderTagId("SRPDefaultUnlit"));
-                vDrawingSettings.overrideMaterial = new Material(Shader.Find("Hidden/InternalErrorShader"));
-                pRenderContext.DrawRenderers(outCull,ref vDrawingSettings,ref vFilterSetting);
+            
+                for (int i = 1; i < m_ShaderTagIdList.Count; ++i)
+                    settings.SetShaderPassName(i, m_ShaderTagIdList[i]);
+
+                pRenderContext.DrawRenderers(outCull,ref settings,ref m_FilteringSettings);
                
               
                 pRenderContext.Submit();
             }
         }
+
     }
 }
