@@ -66,7 +66,7 @@ namespace STFEngine.Util.Editor
                 {
                     Vector2 mousePosition = Event.current.mousePosition;
 
-                    EditorUtility.DisplayPopupMenu(new Rect(mousePosition.x, mousePosition.y, 0, 0), "DZEngineTool/", null);
+                    EditorUtility.DisplayPopupMenu(new Rect(mousePosition.x, mousePosition.y, 0, 0), "STFEngine/", null);
                     Event.current.Use();
                 }
             }
