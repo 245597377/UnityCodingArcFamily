@@ -50,7 +50,7 @@ namespace STFEngine.Render.Example.ScriptRenderPipeline
 
         private void RenderSingleCamera(ScriptableRenderContext pRenderContext, Camera pCamera)
         {
-            if (pCamera.isActiveAndEnabled)
+            if (pCamera.cameraType != CameraType.Game || pCamera.isActiveAndEnabled)
             {
              
                 pRenderContext.SetupCameraProperties(pCamera, mIsStere);
