@@ -8,7 +8,7 @@ namespace STFEngine.Module.AR
     {
         
         void hideDebugMesh();
-        Transform transform { get; set; }
+        Transform U3DTransform { get;}
         Object gameObject { get; set; }
 
         void RegeistServerKey();

@@ -12,6 +12,8 @@ namespace STFEngine.Module.AR
         void SyncCamearPose(Vector3 Position, Vector3 Rot);
         Ray ScreenPointToRay(Vector3 mousePosition);
         Transform GetUnityTransform { get; set; }
+        
+     
     }
 }
 
